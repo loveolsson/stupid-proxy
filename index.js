@@ -4,4 +4,4 @@ const settings = require('./settings.json')
 httpProxy.createProxyServer({
     target: settings.url, 
     auth: settings.auth
-}).listen(8080);
+}).listen(settings.listenPort);
